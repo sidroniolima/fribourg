@@ -1,0 +1,86 @@
+/***** Theme Primary Color (Blue) ******/
+
+/* color */
+.nav-list li a,
+.owl-prev:hover,
+.owl-next:hover,
+.event-address i,
+.btn,
+.caption.style-1 h1,
+.lectures-list li .overlay.social-icons ul li a,
+.aristotle-heading h2,
+.top-bar.style-2 .topbar-left ul li,
+.top-bar.style-2 .search-bar a,
+.top-bar.style-2 .cart a,
+.lectures-column .overlay .social-icons ul li a,
+.filter-tags-holder ul li a.selected,
+.tc-breadcrumb li a,
+.pagination-holder ul li a,
+.nav-list li ul li a,
+.nav-holder.style-2 .nav-list li ul li a
+{ color: #2d2b5e;}
+
+
+/* Background Color */
+.top-bar,
+.sperater i,
+.btn.white:hover,
+.owl-dot.active,
+.datepicker,
+.btn:hover,
+.f-courses-detail,
+.f-courses.active .name-tag,
+.news-column:hover .dates,
+.feature-column .feature-icon,
+.feature-column .feature-icon::before,
+.feature-column .feature-icon::after,
+.most-f-course-btm,
+.lectures-column .overlay .social-icons ul li a:hover,
+.long-batch,
+.event-grid-detail ul li i,
+.blog-detail-img .dates,
+.Category-list ul li span,
+.sec-nu,
+.course-reviews,
+.lecturers-column.style-4 .social-icons li a:hover,
+.tc-per,
+.tc-tab-nav li.active a,
+.icon-heading h4 i,
+.contact-info,
+.nav-list li ul li a:hover,
+.feature-service:hover .plus-icon
+{ background: #2d2b5e;}
+
+/* Border Color */
+.sperater .active,
+.sperater::before,
+.sperater::after,
+.teacher-img,
+.btn,
+.btn::before,
+.btn::after,
+.lectures-column .overlay .social-icons ul li a:hover,
+.pagination-holder ul li a.active::before,
+.lecturers-column.style-4 .social-icons li a:hover,
+.tc-tab-nav,
+.event-detail-img h2::before
+{ border-color: #2d2b5e;}
+
+
+/* Background RGba Color Dark */
+.overlay-blue,
+.team-img .overlay-padding
+{ background: rgba( 45, 43, 94, 0.96);}
+
+/* Background RGba Color Light */
+.event-column .overlay,
+.people-say.style-2 blockquote,
+.lectures-list li .overlay,
+.lecturers-column.style-3 .overlay,
+.gallery-figure .overlay
+{ background: rgba( 45, 43, 94, 0.8);}
+
+/* Border Color Transparent */
+.tc-per::before{ border-color: #2d2b5e transparent transparent;}
+
+/****** Theme Primary Color (Blue) *****

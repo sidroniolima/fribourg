@@ -1,0 +1,400 @@
+@media (max-width: 1200px) {
+.caption.style-1 h1{ font-size: 40px;}
+.feature-service.with-angle::before,
+.feature-service.with-angle::after{ height: 250px;}
+.feature-service{ padding: 30px 40px; min-height: 250px;}
+.feature-service.with-angle{ min-height: 264px;}
+.caption.style-2 h1{ font-size: 35px;}
+.caption.style-2 p{ font-size: 13px;}
+.featuers-services{ position: static; margin: -120px 0 0;}
+.lectures-detail{ height: 299.5px;}
+.caption.style-3{ top: 270px;}
+.caption.style-3 h1{ font-size: 35px;}
+.testimonial.style-2 p{ font-size: 14px;}
+.testimonial.style-2{ top: -225px;}
+.profile-section{ margin: -90px 0 0;}
+}
+
+@media (max-width: 1199px) {
+.event-names ul li h5{ font-size: 13px;}
+.event-names ul li p{ font-size: 13px;}
+.event-names ul li span{ font-size: 12px;}
+.event-names ul li{ margin: 0 0 30px;}
+.testimonial{ padding: 30px;}
+.facts-lsit ul li{ padding: 0 27px;}
+.tags-list li, .meta-post li{ margin: 0 0 0 6px;}
+.nav-holder.style-2 .navbar-btn{ color: #fff; line-height: 60px;}
+
+.video-post iframe{ height: 170px;}
+.event-grid-detail ul li{ font-size: 10px;}
+.course-detail h2{ font-size: 20px;}
+
+.lecturers-column.style-3 .social-icons ul li{ margin: 0 0 0 13px;}
+
+.popular-courses .container{ width: 100%; padding: 0 50px;}
+
+.caption.style-2 h1{ font-size: 38px;}
+.caption.style-2 p{ font-size: 13px;}
+.search-course-form .btn{ padding: 0;}
+.search-course-form ul li{ width: 14.6%;}
+.lectures-list li{ margin: 0 0 0 8.9px;}
+
+.news-detail .tags-list li,
+.meta-post li{ font-size: 12px;}
+.news-detail p{ font-size: 11px;}
+.testimonial.style-2 p{ display: none;}
+.testimonial.style-2{ width: 100%; top: 0; padding: 42.4px;}
+.event-slider-holder h6{ font-size: 12px;}
+.event-slider-holder p{ font-size: 13px;}
+.event-slider-holder{ padding: 31px;}
+.lecturers-column > img{ width: 100%;}
+
+.lecturers-column.style-3 .lectures-detail{ margin: 0 0 0 -98px;}
+.lecturers-column.style-3 .social-icons{ padding: 10px;}
+.event-grid-img img{ width: 100%;}
+
+.event-detail-img h2{ font-size: 25px;}
+.event-profile-widget span{ font-size: 12px;}
+.speakers-column h3{ font-size: 19px;}
+
+.about-sec .tc-padding-top{ padding: 60px 0 0;}
+.contact-info{ padding: 30px; left: -264px;}
+.contact-form h3{ margin: 0 0 14px;}
+.contact-form p{ margin: 0 0 14px;}
+
+.cirlec-slider{ padding: 200px 65px;}
+.cirlec-slider-bg .f-courses{ width: 33%;} 
+}
+
+@media (max-width: 1024px) {
+.f-courses-detail{ padding: 130px 30px 80px;}
+.cirlec-slider-bg .f-courses{ width: 25%;}
+.f-courses-img{ border: 30px solid #f3f3f3;}
+.f-courses .name-tag{ height: 100px; width: 100px; padding: 30px 0; font-size: 16px;}
+.f-courses-detail{ top: 100px; left: -13px;}
+.cirlec-slider{ padding: 150px 65px;}
+.cirlec-slider-bg{ height: 780px;}
+}
+
+@media (max-width: 991px) {
+/* Responsive Menu */
+.enquiry-form-holder{ bottom: -117px;}
+.in-hieght{ bottom: 0;}
+.right-nav{ position: relative; } 
+.nav-list .navbar-toggle{ font-size: 25px;}
+.nav-list .navbar-toggle i{ color: #fff;} 
+.nav-list .navbar-toggle{ display:block; color:#666; float:right; margin: 8px 0 0; cursor: pointer; padding: 0;}
+.nav-list .navbar-collapse.collapse{ display: none !important; height: auto !important; 
+overflow: visible !important; visibility: visible !important;}
+.nav-list .navbar-collapse{ position: absolute; padding: 0; top: 55px; right: 15px; background: #fff; z-index: 1000;}
+.nav-list .navbar-collapse{ width: 250px; margin:0;}
+.nav-list .navbar-collapse li{ width:100%; margin:0; border-bottom: 1px solid rgba(0,0,0,0.1);}
+.nav-list .navbar-collapse li:last-child{ border-bottom: 0;}
+.nav-list ul li > a{ padding: 10px 20px!important;}
+.nav-list.style-1 ul li:nth-child(4){ margin: 0;}
+.nav-list ul li > ul{ right: 100%;} 
+.nav-list ul li:hover > ul{ right: 100%; top: 100%;}
+.nav-list ul li ul li:hover > ul{ right: 100%; left: auto;}
+.nav-list .navbar-collapse li a{ text-align: left;}
+.nav-list .navbar-collapse li{ position: relative;}
+.nav-list .navbar-collapse li.active a::before{ width: 10px; margin: 0;} 
+.nav-list .navbar-collapse.collapse.in{ display:block !important;}
+.inner-header .navbar-toggle i{ color: #282828;}
+.navbar-btn{ display: block; margin: 0; font-size: 21px; line-height: 0; position: absolute; right: 15px; cursor: pointer;
+z-index: 2;}
+.destop-none{ display: block!important;}
+/* Responsive Menu */
+.logo .position-center-y{ left: 15px; transform: translate(0, 0); right: auto;}
+.nav-holder{ height: 60px;}
+.nav-holder .container{ position: relative;}
+
+.main-heading p{ font-size: 14px;}
+.on-hover .courses-detail p{ font-size: 13px;}
+.owl-dots{ bottom: 5px;}
+.event-names.style-1{ margin: 0 0 30px;}
+.event-names.style-1 ul li{ padding: 0 0 0 100px; text-align: left;}
+.event-names.style-1 ul li .dates{ left: 0; right: 0;}
+.event-names.style-2{ margin: 30px 0 0;}
+.facts-lsit ul li{ padding: 0 23px;}
+.facts-lsit ul li strong{ font-size: 40px;}
+.facts-lsit ul li h4{ font-size: 12px;}
+.course-img img{ width: 100%;} 
+.footer-c-widget h3{ font-size: 15px;}
+
+.caption.style-2 p{ display: none;}
+.search-course-form ul li{ width: 30.3%; margin: 10px!important;}
+
+.feature-column h3{ font-size: 18px;}
+.people-say blockquote{ padding: 20px; font-size: 13px;}
+.lecture-about{ width: 77%; margin: 0 auto 30px;}
+.leatures-imgs{ width: 75%; margin: 0 auto;}
+.news-img img{ width: 100%;}
+.news-column.style-2{ margin: 0 0 30px!important;}
+.news-column.style-2 .news-detail p{ font-size: 16px;}
+
+.feature-service{ padding: 30px;}
+.feature-service h3{ font-size: 14px;}
+.feature-service p{ font-size: 13px;}
+.feature-service.with-angle::before, .feature-service.with-angle::after{ height: 278px;}
+.top-bar.style-2 ul li{ margin: 0 0 0 10px;}
+
+.lectures-detail{ height: 247.5px;}
+.lectures-detail p{ font-size: 13px;}
+.lectures-detail h2{ font-size: 20px; margin: 0 0 10px;}
+.lectures-column h3{ font-size: 14px;}
+.event-deta-2{ margin: 0 0 30px;}
+.event-img-2 img{ width: 100%;}
+
+.caption.style-3 p{ display: none;}
+.caption-img{ right: -120px;}
+.event-slider-holder{ padding: 20px 30px;}
+.event-slider-holder p{ font-size: 11px; margin: 0 0 7px;}
+.testimonial.style-2{ padding: 35.2px 42.4px;}
+.nav-holder.style-2 .nav-list li a{ color: #2d2b5e;}
+
+.video-post iframe{ height: 190px;}
+
+.listing-detail{ padding: 0 10px;}
+
+.blog-detail h3{ font-size: 18px;}
+.event-grid{ margin: 0 0 30px!important;}
+
+.event-price{ overflow: hidden; margin: 30px 0 0;}
+.event-price .btn{ float: left!important;}
+.speakers-column{ margin: 0 0 30px;}
+
+.most-f-course{ margin: 0 0 30px!important;}
+.course-detail h2{ font-size: 18px;}
+.aside-widget .btn.full-width{ padding: 0 25px;}
+.rating-stars li{ margin: 0 0 0 2px;}
+
+.about-sec .tc-padding-top{ padding: 0;}
+
+.tc-skillgroup{ margin: 50px 0 0;}
+
+.courses-column{ margin: 0 0 30px!important;}
+
+.contact-info{ padding: 55px; left: -255px;}
+
+.popular-courses .container{ width: 100%; padding: 0 15px;}
+
+.o-lecturers-teacher.style-4{ right: 124px;}
+.o-lecturers-teacher.style-2, 
+.o-lecturers-teacher.style-4{ top: 17%;}
+.o-lecturers-teacher.style-2{ left: 126px;}
+.teacher-detail{ padding: 70px 0 0;}
+
+.cirlec-slider-bg{ height: 580px;}
+.cirlec-slider-bg .f-courses{ width: 30%;}
+.f-courses-detail{ left: -27px;}
+.f-courses-detail{ padding: 100px 29px 70px;}
+
+.feature-icon{ height: 140px!important; line-height: 140px!important; width: 140px!important;}
+.feature-column p{ padding: 0 10px;}
+}
+
+@media (max-width: 800px) {
+.caption.style-3{ top: 200px;}
+.caption-img{ width: 50%; right: 0;}
+
+.o-teacher-img{ border: 20px solid #f3f3f3;}
+.o-lecturers-teacher.active .o-teacher-img{ border: 15px solid #f8b239;}
+.o-teacher-img{ width: 80%;}
+.detail-teacher-img{ width: 44%;}
+.o-lecturers-teacher.style-3{ top: 42px;}
+.o-lecturers-teacher.style-2, 
+.o-lecturers-teacher.style-4{ top: 15%;}
+.o-lecturers-teacher.style-1, 
+.o-lecturers-teacher.style-5{ top: 40%;}
+.o-lecturers-bg{ height: 580px;}
+.teacher-detail{ padding: 20px 0 0;} 
+.teacher-detail p{ font-size: 11px;}
+.teacher-detail .btn{ height: 40px; line-height: 40px; padding: 0 25px;}
+
+.cirlec-slider{ padding: 110px 65px;}
+}
+
+@media (max-width: 768px) {
+.detail-teacher-img{ width: 48.2%; margin: 0 30px 0 0;}
+}
+
+@media (max-width: 767px) {
+.topbar-left{ display: none;}
+.caption.style-1 h1{ font-size: 23px;}
+.owl-controls{ width: 30%!important;}
+.owl-dots{ display: none!important;}
+.news-img img{ width: 100%;}
+.testimonial-slider .owl-item.active.center{ transform: scale(1);}
+.facts-lsit ul li{ border: 0; width: 100%; margin: 0 0 30px;}
+.facts-lsit ul li:last-child{ margin: 0;}
+
+.footer-c-widget{ margin: 0 0 30px;}
+
+.search-course-form{ margin: 80px 0 0 0;}
+.search-course-form ul li{ width: 29.6%;}
+.caption.style-2 h1{ font-size: 30px;}
+
+.feature-column{ margin: 15px 0;}
+.main-heading p{ font-size: 13px;}
+.people-say.style-2{ top: 0; width: 48%;}
+.people-say{ top: 0; width: 48%;}
+.leatures-imgs{ width: 88%;}
+.lecture-about{ width: 88%;}
+
+.profile-section{ margin: 80px 0 0;}
+.testimonial.style-2{ position: static;}
+.signature{ float: none;}
+.event-slider-holder .owl-controls{ width: 100%!important;}
+.filter-tags-holder ul li{ margin: 0 0 0 8px;}
+.filter-tags-holder ul li a{ padding: 10px;}
+.blog-detail-holder{ margin: 0 0  80px;}
+
+.r-pull-none{ float: none!important;}
+.event-grid-holder{ margin: 0 0 80px;}
+.event-gallery .gallery-figure{ margin: 15px 0!important;} 
+
+.about-sec .tc-padding-top{ padding: 0 0 30px;}
+
+.contact-form-holder{ position: static;}
+.contact-form{ position: static; transform: translate(0, 0); padding: 30px;}
+.contact-info{ position: static; transform: translate(0, 0);}
+.contact-map{ height: 400px;}
+}	
+
+@media (max-width: 640px) {
+.featuers-services{ margin: 80px 0 0;}
+.feature-service.with-angle::before, .feature-service.with-angle::after{ height: 315px;} 
+.video-post iframe{ height: 170px;}
+
+.o-lecturers-teacher{ position: static; width: 20%; float: left;
+-webkit-transform: translate(0, 0)!important;
+-moz-transform: translate(0, 0)!important;
+-ms-transform: translate(0, 0)!important;
+transform: translate(0, 0)!important;}
+.o-lecturers-teacher a{ width: auto;}
+.o-lecturers-bg{ height: auto;}
+.o-lecturers-bg{ background: none!important;}
+.o-teacher-detail{ position: static; width: 100%; padding: 70px 0 0; float: left;
+-webkit-transform: translate(0, 0)!important;
+-moz-transform: translate(0, 0)!important;
+-ms-transform: translate(0, 0)!important;
+transform: translate(0, 0)!important;}
+.owl-carousel .owl-stage-outer{ overflow: visible;}
+.o-lecturers{ padding: 0;}
+.teacher-detail{ padding: 70px 0 0;}
+.detail-teacher-img{ margin: 0 30px 0 24px; width: 44%;}
+
+.cirlec-slider{ padding: 60px 100px;}
+.cirlec-slider-bg{ height: 420px;}
+.f-courses-detail p{ display: none;}
+.f-courses-detail{ padding: 76px 29px 70px; left: -33px; top: 60px;}
+.f-courses .name-tag{ font-size: 10px; height: 60px; padding: 15px 0; width: 60px;}
+.f-courses-img{ border: 15px solid #f3f3f3;}
+.f-courses-detail .btn{ height: 40px; line-height: 40px; padding: 0 20px;}
+}
+
+@media (max-width: 480px) {
+.nav-list ul li > ul{ right: 0; top: 100%;}
+.nav-list ul li:hover > ul{ right: 0; top: 100%;}
+.r-full-width{ width: 100%!important;}
+.most-f-course > img{ width: 100%;}
+.search-course-form ul li{ width: 28.2%;}
+.event-column:hover{ transform: scale(1);}
+.event-column > img{ width: 100%;}
+.people-say{ position: static!important; width: 100%!important;}
+.people-say.style-1{ margin: 0 0 130px;}
+.lectures-list li{ width: 23.3%;}
+.aristotle-heading h2{ font-size: 30px;}
+.news-img{ margin: 0 0 30px;}
+.logo img{ width: 60%; margin: 0 0 0 -30px;}
+.caption.style-2 h1{ font-size: 20px;}
+.about-story,
+.about-principal{ padding: 40px 30px;}
+
+.feature-service{ margin: 0 0 60px!important;}
+.plus-icon{ bottom: 35px;}
+.feature-service.with-angle::before, 
+.feature-service.with-angle::after{ display: none;} 
+
+.news-column.style-3{ margin: 0 0 30px;}
+.news-column.style-3 .news-img{ margin: 0;}
+.lectures-detail{ height: 350px;}
+
+.caption.style-3{ top: 150px;}
+.caption.style-3 h1{ font-size: 25px;}
+.caption-img{ top: 70px;}
+.video-post iframe{ height: 250px;}
+
+.listing-detail h3{ font-size: 14px;}
+.listing-detail p{ font-size: 13px;}
+
+.realted-tags{ float: none; width: 100%; margin: 0 0 30px;}
+.tags-nd-social .social-icons{ float: left; width: 100%;}
+.blog-detail-img .dates{ height: 60px; width: 60px; bottom: -30px; padding: 12px 0;}
+.dates span{ line-height: 18px;}
+
+.lecturers-column.style-4{ margin: 0 0 50px;}
+
+.detail-teacher-img{ display: none;}
+.teacher-detail{ padding: 0 50px 50px; width: 100%; text-align: center;}
+.teacher-detail .social-icons ul{ display: inline-block;}
+.o-lecturers-teacher.active .o-teacher-img{ border: 10px solid #f8b239;}
+.o-teacher-img{ border: 10px solid #f3f3f3;}
+
+.o-featured-courses .container{ width: 100%;}
+.cirlec-slider{ padding: 60px 50px;}
+.cirlec-slider-bg{ height: 360px;}
+.f-courses-detail h4{ font-size: 12px;}
+.f-courses-img{ border: 10px solid #f3f3f3;}
+.f-courses-detail{ padding: 76px 20px 70px; width: 160px; left: -26px;}
+.f-courses .name-tag{ display: none;}
+
+.dates span{ line-height: 25px;}
+.news-column .news-img{ margin: 0;}
+}
+
+@media (max-width: 479px) {
+.cirlec-slider-bg .f-courses{ position: static; margin: 0 0 30px;
+-webkit-transform: translate(0, 0)!important;
+-moz-transform: translate(0, 0)!important;
+-ms-transform: translate(0, 0)!important;
+transform: translate(0, 0)!important;}
+.cirlec-slider-bg{ background: none!important; height: auto;}
+.f-courses.active .f-courses-detail{ left: 150px; top: 50px;}
+}
+
+@media (max-width: 320px) {
+.caption.style-1 h1 span{ font-size: 30px;}	
+.caption.style-1 h1{ font-size: 10px;}
+.topbar-right ul li{ margin: 0;}
+.event-names.style-1 ul li,
+.event-names.style-2 ul li{ padding: 0 0 0 85px;}
+.tags-list li, .meta-post li{ font-size: 13px;}
+.newslatter-holder{ width: 100%;}
+.newslatter-holder h5{ position: static; line-height: 0;}
+.newslatter{ padding: 0;}
+.caption.style-2 h1{ font-size: 14px;}
+.search-course-form ul li{ width: 41.3%;}
+.search-course-form .btn{ font-size: 12px;}
+.lectures-list li{ width: 22.3%;}
+.aristotle-heading h2{ font-size: 20px;}
+.aristotle-heading span{ font-size: 14px;}
+.main-heading p{ display: none;}
+.caption.style-3{ top: 99px;}
+.caption.style-3 h1{ font-size: 15px;}
+.lastest-news.style-2 .news-img{ margin: 0;}
+.filter-tags-holder ul li{ margin: 0 0 10px 10px!important;}
+.filter-tags-holder ul li a{ font-size: 14px;}
+.video-post iframe{ height: 170px;}
+.comment-text{ padding: 0 0 0 80px;}
+.comment-text p{ font-size: 14px;}
+.curriculum-shedule ul li ul li{ margin: 0 0 0 10px; font-size: 10px;}
+.teacher-detail{ padding: 0 10px 50px;}
+.o-lecturers-teacher.active .o-teacher-img{ border: 5px solid #f8b239;}
+.o-teacher-img{ border: 5px solid #f3f3f3;}
+.lastest-news .news-img{ margin: 0;}
+.main-heading span{ margin: 0;}
+
+.cirlec-slider{ padding: 0 0 60px;}
+.f-courses.active .f-courses-detail{ left: 100px; top: 38px; width: 160px;}
+} 

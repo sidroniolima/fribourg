@@ -1,0 +1,34 @@
+/* Theme transition Effect */
+*:after,
+*:before,
+a,
+p,
+h1,h2,h3,h4,h5,h6,
+button,
+.on-hover,
+.courses-column,
+.dates,
+.owl-item.active.center,
+.overlay,
+.nav-list ul li a::before,
+.event-column,
+span,
+.lectures-list li,
+.lectures-list li .overlay,
+.lecturers-column.style-3 img,
+.lectures-detail,
+.lectures-name,
+.nav-list li > ul,
+.f-courses-detail
+{-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+
+
+
+
+
+
+
