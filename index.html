@@ -35,6 +35,13 @@
 <![endif]-->
 </head>
 <body>
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="spam-modal" id="modal-spam">
+	  <div class="modal-dialog modal-sm" role="document">
+	    <div class="modal-content">
+	    	<img class="img-responsive" src="images/em-construcao.png"/>
+	    </div>
+	  </div>
+	</div>
 
 <!-- Wrapper -->
 <div class="wrapper">
@@ -507,7 +514,7 @@
 			<div class="newslatter-holder h-white">
 				<h5>NEWSLETTER</h5>
 				<div class="newslatter">
-					<input type="text" placeholder="Digite seu emial" class="form-control">
+					<input type="text" placeholder="Digite seu email" class="form-control">
 					<a href="" class="glyph-icon flaticon-sent-mail"></a>
 				</div>
 			</div>
@@ -702,8 +709,14 @@
 <script src="js/isotope.pkgd.js"></script>					 
 <script src="js/wow-min.js"></script>			
 <script src="js/main.js"></script>	
+
 <script>
 jQuery(document).ready(function($) {
+    
+    var modal = $('#modal-spam');
+	modal.modal('show');
+	setTimeout(() => modal.modal('hide'), 3000);
+
     // Owl Carousel for slider
     var owlSlider = $('.o-slider-detail').owlCarousel({
         loop: false,
@@ -713,7 +726,7 @@ jQuery(document).ready(function($) {
         URLhashListener: true,
         startPosition: 'URLHash',
         dots: false
-    });
+    });    
     $(".o-lecturers-bg").on("click", ".o-lecturers-teacher", function(e) {
         /* Act on the event */
         $(".o-lecturers-teacher").removeClass("active")
