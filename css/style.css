@@ -1056,3 +1056,9 @@ font-size: 14px;}
 
 /****** Gallery ***********************************************************
 *********************************************************** Gallery ******/
+
+.banner
+{
+	background-image: url('../images/patterns/pow-star.png');
+	border-radius: 25px;
+}
