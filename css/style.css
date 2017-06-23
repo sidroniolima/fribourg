@@ -1062,3 +1062,21 @@ font-size: 14px;}
 	background-image: url('../images/patterns/pow-star.png');
 	border-radius: 25px;
 }
+
+.carousel .left > i,
+.carousel .right > i {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+}
+.carousel .right > i {
+  left: auto;
+  right: 20px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
