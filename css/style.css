@@ -1080,3 +1080,10 @@ font-size: 14px;}
     background-image: none
 }
 
+.texto-alerta {
+  display: none;
+}
+
+#spinner{
+ display: none;
+}

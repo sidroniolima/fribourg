@@ -272,33 +272,31 @@ jQuery( document ).ready(function( $ ) {
     });
     // ------- Mesonary ------- // 
 
-
     // ------- Event Google Map ------- // 
     $("#event-map").gmap3({
         marker: {
-            address: "Haltern am See, Weseler Str. 151"
+            address: "Rua P. Manuel Lourenço Sobrinho, 90, Olaria, Nova Friburgo, RJ"
         },
         map: {
             options: {
                 zoom: 10,
                 scrollwheel: false,
             }
-        },
+        }
     });
     // ------- Event Map ------- //
 
     // ------- Contact Google Map ------- // 
     $("#contact-map").gmap3({
         marker: {
-            address: "Haltern am See, Weseler Str. 151"
+            address: "Rua P. Manuel Lourenço Sobrinho, 90, Olaria, Nova Friburgo, RJ"
         },
         map: {
             options: {
                 zoom: 16,
                 scrollwheel: false,
             }
-        },
-
+        }
     });
     // ------- Contact Map ------- //
 
