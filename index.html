@@ -55,6 +55,32 @@
 <![endif]-->
 </head>
 <body>
+
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalSpam" id="modal-spam">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content banner">
+          <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Aviso aos alunos!</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-12 col-xs-12">
+                          <div class="col-md-3 col-xs-3" style="text-align: center">
+                            <i class="fa fa-exclamation fa-5x"></i>
+                          </div>
+                          <div class="col-md-9 col-xs-9">
+                            <p>    <i class="fa fa-star"></i>Recesso escolar do dia 15 ao dia 31 de julho. </br>
+                                <i class="fa fa-build"></i><i>A secretaria da escola funcionará no dia 17 das 8h às 13h para recebimento das mensalidades.</br></i>
+                                <i class="fa fa-book"></i><b>Retorno das aulas no dia 01 de agosto.</b>
+                            </p>
+                          </div>
+                </div>
+            </div>
+
+          </div>
+    </div>
+  </div>
+</div>
 	
 <!-- Wrapper -->
 <div class="wrapper">
@@ -348,48 +374,29 @@
 						<div class="event-names style-1">
 							<ul>
 								<li>
-									<h5>Aulão ENEN</h5>
-									<p>Sábado letivo para o Ensino Médio</p>
+									<h5>Atividade externa</h5>
+									<p>Dia internacional do Cooperativismo</p>
 									<strong class="dates position-center-x">
-										<span>11</span>
-										<span>/03</span>
+										<span>01</span>
+										<span>/07</span>
 									</strong>
 								</li>
 								<li>
-									<h5>Prova</h5>
-									<p>Prova mensal de Português - EF II</p>
+									<h5>Prova semestrais</h5>
+									<p>de 3 a 7 de julho</p>
 									<strong class="dates position-center-x">
-										<span>15</span>
-										<span>/03</span>
+										<span></span>
+										<span>03 a 07 /07</span>
 									</strong>
 								</li>
 								<li>
-									<h5>Prova</h5>
-									<p>Prova mensal de História - EF II</p>
+									<h5>SEmana de recuperação</h5>
+									<p>de 10 a 13 de julho</p>
 									<strong class="dates position-center-x">
-										<span>16</span>
-										<span>/03</span>
+										<span></span>
+										<span>10 a 13 /07</span>
 									</strong>
 								</li>
-								<li>
-									<h5>Prova</h5>
-									<p>Prova mensal de Geometria - EF II</p>
-									<p>Prova mensal de Portugês - 5º ano</p>
-									<strong class="dates position-center-x">
-										<span>17</span>
-										<span>/03</span>
-									</strong>
-								</li>
-								<li>
-									<h5>Prova</h5>
-									<p>Prova mensal de Geografia - EF II</p>
-									<p>Prova mensal de Matemática - 5º ano</p>
-									<p>Prova mensal de Português - 2º ao 4º ano</p>
-									<strong class="dates position-center-x">
-										<span>20</span>
-										<span>/03</span>
-									</strong>
-								</li>			
 							</ul>
 						</div>
 					</div>
@@ -406,36 +413,21 @@
 						<div class="event-names style-2">
 							<ul>
 								<li>
-									<h5>Prova</h5>
-									<p>Prova mensal de Matemática - EF II</p>
-									<p>Prova mensal de Geografia - 5º ano</p>
-									<p>Prova mensal de Geografia - 2º ao 4º ano</p>
+									<h5>Dia livre</h5>
+									<p>Período livre para o aluno</p>
 									<strong class="dates position-center-x">
-										<span>21</span>
-										<span>/03</span>
+										<span></span>
+										<span>14 a 31 /07</span>
 									</strong>
 								</li>	
 								<li>
-									<h5>Prova</h5>
-									<p>Prova mensal de Inglês e Redação - EF II</p>
-									<p>Prova mensal de Ciências - 5º ano</p>
-									<p>Prova mensal de Ciências - 2º ao 4º ano</p>
+									<h5>Retorno</h5>
+									<p>Início do segundo semestre</p>
 									<strong class="dates position-center-x">
-										<span>22</span>
-										<span>/03</span>
+										<span>01</span>
+										<span>/08</span>
 									</strong>
-								</li>			
-								<li>
-									<h5>Prova</h5>
-									<p>Prova mensal de Espanhol e Artes - EF II</p>
-									<p>Prova mensal de Inglês - 5º ano</p>
-									<p>Prova mensal de História - 2º ao 4º ano</p>
-									<strong class="dates position-center-x">
-										<span>23</span>
-										<span>/03</span>
-									</strong>
-								</li>
-
+								</li>		
 							</ul>
 						</div>
 					</div>
@@ -751,7 +743,7 @@ jQuery(document).ready(function($) {
     
     var modal = $('#modal-spam');
 	modal.modal('show');
-	setTimeout(() => modal.modal('hide'), 7000);
+	setTimeout(() => modal.modal('hide'), 9000);
 
     // Owl Carousel for slider
     var owlSlider = $('.o-slider-detail').owlCarousel({
