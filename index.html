@@ -8,7 +8,7 @@
 <!-- Document Title -->
 <title>Escola Fribourg</title>
 
-<!-- Favicon -->
+<!-- Favicon -->		
 <!-- Favicon -->
 <link rel="shortcut icon" href="images/favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -56,23 +56,24 @@
 </head>
 <body>
 
+	<!--
 <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalSpam" id="modal-spam">
   <div class="modal-dialog" role="document">
     <div class="modal-content banner">
           <div class="modal-header">
-              <h4 class="modal-title" id="myModalLabel">Aviso aos alunos!</h4>
+              <h4 class="modal-title" id="myModalLabel">Aviso a todos!</h4>
           </div>
           <div class="modal-body">
               <div class="row">
                   <div class="col-md-12 col-xs-12">
-                          <div class="col-md-3 col-xs-3" style="text-align: center">
-                            <i class="fa fa-exclamation fa-5x"></i>
+                          <div class="col-md-3 col-xs-3" style="text-align: center; margin-top:10px">
+                            <i class="fa fa-tree fa-5x"></i>
                           </div>
                           <div class="col-md-9 col-xs-9">
-                            <p>    <i class="fa fa-star"></i>Recesso escolar do dia 15 ao dia 31 de julho. </br>
-                                <i class="fa fa-build"></i><i>A secretaria da escola funcionará no dia 17 das 8h às 13h para recebimento das mensalidades.</br></i>
-                                <i class="fa fa-book"></i><b>Retorno das aulas no dia 01 de agosto.</b>
-                            </p>
+                            <p><span style="margin-left: 35px">Recesso escolar do dia 18/12/2017 ao dia 14/01/2018, </span>
+																<b>com início do ano letivo em 05/02/2018</b>.</br>
+														</p>
+														<p style="text-align: center;">	<span>Boas festas e um ótimo 2018!!!</span></p>
                           </div>
                 </div>
             </div>
@@ -81,7 +82,8 @@
     </div>
   </div>
 </div>
-	
+-- >
+
 <!-- Wrapper -->
 <div class="wrapper">
 
@@ -95,9 +97,12 @@
 				<!-- Topbar Left -->
 				<div class="topbar-left">
 					<ul>
-						<li><i class="fa fa-sign-in"></i>Login  /  Cadastre-se </li>
-						<li><i class="fa fa-phone"></i>(22) 2521 - 5411</li>
-						<li><i class="fa fa-envelope"></i>contato@escolafribourg.com.br</li>                
+						<li><a class="strong" target="_blank" href="https://quiet-dusk-71052.herokuapp.com/"><i class="fa fa-sign-in"></i>Login  /  Cadastre-se </li></a>
+						
+						<div class="topbar-left details">
+							<li><i class="fa fa-phone"></i>(22) 2521 - 5411</li>
+							<li><i class="fa fa-envelope"></i>contato@escolafribourg.com.br</li>                
+						</div>
 					</ul>
 				</div>
 				<!-- Topbar Left -->
@@ -106,10 +111,6 @@
 				<div class="topbar-right">
 					<ul>
 						<li>
-							<form class="search-bar">
-								<input class="form-control" type="search" placeholder="pesquisar...">
-								<a class="fa fa-search" href="#"></a>
-							</form>
 						</li>
 					</ul>
 				</div>
@@ -129,16 +130,18 @@
 						<li>
 							<a href="#">Home</a>
 						</li>
+
 						<li>
 							<a href="escola.html">a Escola</a>
 						</li>
+						
 						<li>
 							<a href="calendario.html">calendário</a>
-						</li>
+						</li>				
 
 						<li>
-							<a href="festa-junina-2017.html">festa junina 2017</a>
-						</li>	
+							<a href="#">galeria</a>
+						</li>								
 
 						<li>
 							<a href="#">cursos</a>
@@ -167,7 +170,7 @@
 		<div class="home-banner style-1 fullscreen parallax-window" data-parallax="scroll" data-image-src="images/banner/banner-bg.jpg">
 			<div class="caption style-1 position-center-center">
 				<h1><span>Escola Fribourg</span>Educando para a vida</h1>
-				<img src="images/banner/tratada_1-min.png" alt="">
+				<!-- <img src="images/banner/tratada_1-min.png" alt=""> -->
 			</div>
 		</div>
 		<!-- Banner -->
@@ -214,19 +217,20 @@
 								<ul class="pull-left">
 									<li><i class="fa fa-users"></i>6 turmas</li>								
 								</ul>
-								<span class="teacher-fee pull-right">R$ 246</span>
+								<span class="teacher-fee pull-right">R$ 265</span>
 							</div>
 							<div class="on-hover">
 								<div class="courses-detail">
 									<div class="teacher-img"><img src="images/courses/edu-infantil-02.jpg" alt=""></div>
 									<span class="teacher-name">das 13 às 17 horas</span>
-									<h5><a href="#">Educação infantil</a></h5>
+									<h5><a href="#">Educação infantil *</a></h5>
 									<p>
-										2 turmas de maternal 2
-										<br/>2 turmas de pré-escolar 2
-										<br/>2 turmas de pré-escolar 3
+										2 turmas de maternal II
+										<br/>2 turmas de pré-escolar II
+										<br/>2 turmas de pré-escolar III
 									</p>
-									<a class="btn white" href="#">Saiba mais</a>
+									<br/><span class="texto-asterisco">* a partir dos 3 anos de idade</span>
+									<!-- <a class="btn white" href="#">Saiba mais</a> -->
 								</div>
 							</div>
 						</div>
@@ -248,7 +252,7 @@
 								<ul class="pull-left">
 									<li><i class="fa fa-users"></i>12 turmas</li>
 								</ul>
-								<span class="teacher-fee pull-right">R$ 286 à R$ 360</span>
+								<span class="teacher-fee pull-right">R$ 308 à R$ 388</span>
 							</div>
 							<div class="on-hover">
 								<div class="courses-detail">
@@ -258,11 +262,11 @@
 									<p>
 										Turmas do 1º ao 5º ano
 										<br/>
-										1º ano: R$ 286
+										1º ano: R$ 308
 										<br/>
-										2º ao 5º ano: R$ 360
+										2º ao 5º ano: R$ 388									
 									</p>
-									<a class="btn white" href="#">Saiba mais</a>
+									<!--<a class="btn white" href="#">Saiba mais</a> -->
 								</div>
 							</div>
 						</div>
@@ -284,7 +288,7 @@
 								<ul class="pull-left">
 									<li><i class="fa fa-users"></i>10 turmas</li>
 								</ul>
-								<span class="teacher-fee pull-right">R$ 390</span>
+								<span class="teacher-fee pull-right">R$ 420</span>
 							</div>
 							<div class="on-hover">
 								<div class="courses-detail">
@@ -298,7 +302,7 @@
 										<br/>
 
 									</p>
-									<a class="btn white" href="#">Saiba mais</a>
+									<!--<a class="btn white" href="#">Saiba mais</a> -->
 								</div>
 							</div>
 						</div>
@@ -320,7 +324,7 @@
 								<ul class="pull-left">
 									<li><i class="fa fa-users"></i>5 turmas</li>
 								</ul>
-								<span class="teacher-fee pull-right">R$ 480</span>
+								<span class="teacher-fee pull-right">R$ 518</span>
 							</div>
 							<div class="on-hover">
 								<div class="courses-detail">
@@ -330,7 +334,7 @@
 									<p>
 										Aulas de laboratório de química, biologia e física no contra turno.
 									</p>
-									<a class="btn white" href="#">Saiba mais</a>
+									<!--<a class="btn white" href="#">Saiba mais</a> -->
 								</div>
 							</div>
 						</div>
@@ -374,29 +378,14 @@
 						<div class="event-names style-1">
 							<ul>
 								<li>
-									<h5>Atividade externa</h5>
-									<p>Dia internacional do Cooperativismo</p>
+									<h5>Recesso</h5>
+									<p>Fim das atividades ano letivo 2017</p>
 									<strong class="dates position-center-x">
-										<span>01</span>
-										<span>/07</span>
+										<span>18</span>
+										<span>/12</span>
 									</strong>
 								</li>
 								<li>
-									<h5>Prova semestrais</h5>
-									<p>de 3 a 7 de julho</p>
-									<strong class="dates position-center-x">
-										<span></span>
-										<span>03 a 07 /07</span>
-									</strong>
-								</li>
-								<li>
-									<h5>SEmana de recuperação</h5>
-									<p>de 10 a 13 de julho</p>
-									<strong class="dates position-center-x">
-										<span></span>
-										<span>10 a 13 /07</span>
-									</strong>
-								</li>
 							</ul>
 						</div>
 					</div>
@@ -413,19 +402,19 @@
 						<div class="event-names style-2">
 							<ul>
 								<li>
-									<h5>Dia livre</h5>
-									<p>Período livre para o aluno</p>
+									<h5>Retorno das atividades</h5>
+									<p>Atividades administrativas e pedagógicas</p>
 									<strong class="dates position-center-x">
-										<span></span>
-										<span>14 a 31 /07</span>
+										<span>14</span>
+										<span>/01</span>
 									</strong>
 								</li>	
 								<li>
-									<h5>Retorno</h5>
-									<p>Início do segundo semestre</p>
+									<h5>Volta às aulas</h5>
+									<p>Início do Ano Letivo 2018</p>
 									<strong class="dates position-center-x">
-										<span>01</span>
-										<span>/08</span>
+										<span>05</span>
+										<span>/02</span>
 									</strong>
 								</li>		
 							</ul>
@@ -454,7 +443,7 @@
 
 				<div class="main-heading-holder">
 					<div class="main-heading gray-color">
-						<h2><em>Há 18 anos educando para a vida.</em><span>h</span></h2>
+						<h2><em>Há 19 anos educando para a vida.</em><span>h</span></h2>
 						<span class="sperater">
 							<i></i>
 							<i class="active"></i>
@@ -556,13 +545,13 @@
 					<div class="col-sm-4 col-xs-6 r-full-width">
 						<div class="footer-c-widget logo-widget p-white">
 							<img src="images/footer-logo.png" alt="">
-							<p>Há 18 anos educando para vida.</p>
+							<p>Há 19 anos educando para vida.</p>
 							<div class="social-icons">
 								<ul>
-									<li><a class="fa fa-facebook" href="#"></a></li>
-									<li><a class="fa fa-instagram" href="#"></a></li>
-									<li><a class="fa fa-google-plus" href="#"></a></li>
-									<li><a class="fa fa-twitter" href="#"></a></li>
+									<li><a class="fa fa-facebook" href="https://www.facebook.com/EscolaFribourg/"></a></li>
+									<li><a class="fa fa-instagram" href="https://www.instagram.com/escolafribourg"></a></li>
+									
+									
 								</ul>
 							</div>
 						</div>
@@ -710,7 +699,7 @@
 
 		<!-- Sub Footer -->
 		<div class="sub-footer p-white text-center">
-			<p>© Copyright 2017. Powered by <a href="http://tetrati.com.br" class="powered">tetrati</a>.</p>
+			<p>© Copyright 2018. Powered by <a href="http://tetrati.com.br" class="powered">tetrati</a>.</p>
 		</div>
 		<!-- Sub Footer -->
 
@@ -743,7 +732,7 @@ jQuery(document).ready(function($) {
     
     var modal = $('#modal-spam');
 	modal.modal('show');
-	setTimeout(() => modal.modal('hide'), 9000);
+	setTimeout(() => modal.modal('hide'), 7000);
 
     // Owl Carousel for slider
     var owlSlider = $('.o-slider-detail').owlCarousel({
