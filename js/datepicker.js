@@ -1095,11 +1095,14 @@
 		},
 
 		click: function(e){
+			
 			e.preventDefault();
 			e.stopPropagation();
+			
 			var target = $(e.target).closest('span, td, th'),
 				year, month, day;
 			if (target.length === 1){
+
 				switch (target[0].nodeName.toLowerCase()){
 					case 'th':
 						switch (target[0].className){
@@ -1187,6 +1190,33 @@
 								}
 							}
 							this._setDate(UTCDate(year, month, day));
+							console.log(eventos[month].list);
+
+							var templateDivEventos = 
+								'<div class="col-lg-4 col-md-4 col-sm-12">' + 
+									'<div class="event-names style-2">' +
+										'<ul>' +
+											'<li>' +
+												'<h5>Retorno das atividades</h5>' +
+												'<p>Atividades administrativas e pedagógicas</p>' +
+												'<strong class="dates position-center-x">' +
+													'<span>14</span>' +
+													'<span>/01</span>'
+												'</strong>' +
+											'</li>	' +
+											'<li>' +
+												'<h5>Volta às aulas</h5>' +
+												'<p>Início do Ano Letivo 2018</p>' +
+												'<strong class="dates position-center-x">' +
+													'<span>05</span>' +
+													'<span>/02</span>' +
+												'</strong>' +
+											'</li>	'	 +
+										'</ul>' +
+									'</div>' +
+								'</div>';
+
+							$('.events-left-side').html(templateDivEventos);
 						}
 						break;
 				}
@@ -1668,6 +1698,16 @@
 			titleFormat: "MM yyyy"
 		}
 	};
+
+	var eventos = [
+		{ month: 1, 
+			list: [
+				{data: '01/01/2018', descricao: 'Teste'},
+				{data: '10/01/2018', descricao: 'Início'},
+				{data: '10/01/2018', descricao: 'Fim'},
+			]
+		}
+	];
 
 	var DPGlobal = {
 		modes: [
