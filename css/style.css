@@ -28,7 +28,7 @@
 */
 
 /****** Theme Reset Style ******/
-body{ background: #fff; font-size: 14px; color: #555; font-family: 'PT Serif', serif;}
+body{ background: #fff; font-size: 14px; color: #555; font-family: 'PT Serif', serif; padding-right: 0px !important}
 body h1, body h2, body h3, body h4, body h5, body h6{ color: #484848; margin: 0 0 20px; font-family: 'Lato', sans-serif; text-transform: uppercase;}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{ color: #484848;}
 
@@ -124,7 +124,7 @@ transform: rotate(45deg);}
 .main-heading.left-heading .h2{ float: left;}
 .main-heading.left-heading .sperater{ float: left;}
 
-.main-heading-holder{ text-align: center; padding: }
+.main-heading-holder{ text-align: center; }
 .main-heading{ display: inline-block; padding: 0 0 50px;}
 .main-heading h2{ line-height: 32px;}
 .main-heading .heading-icon{ width: 250px; display: inline-block; position: relative;}
@@ -1101,4 +1101,13 @@ a.strong:hover, a.strong:focus, a.strong:active { outline: none; text-decoration
   color: gray;
   font-size: small;
   font-style: italic;
+}
+
+.modal-open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
 }

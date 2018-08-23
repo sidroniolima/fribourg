@@ -140,6 +140,8 @@
 
 		if (this.isInline){
 			this.show();
+			var month = this.viewDate.getUTCMonth();
+			preencheEventos(month);
 		}
 	};
 
@@ -919,8 +921,9 @@
 			prevMonth.setUTCDate(day - (prevMonth.getUTCDay() - this.o.weekStart + 7)%7);
 			var nextMonth = new Date(prevMonth);
 			if (prevMonth.getUTCFullYear() < 100){
-        nextMonth.setUTCFullYear(prevMonth.getUTCFullYear());
-      }
+				nextMonth.setUTCFullYear(prevMonth.getUTCFullYear());
+		
+      		}
 			nextMonth.setUTCDate(nextMonth.getUTCDate() + 42);
 			nextMonth = nextMonth.valueOf();
 			var html = [];
@@ -1052,6 +1055,7 @@
 				year += 1;
 			}
 			yearCont.html(html);
+			preencheEventos(month);
 		},
 
 		updateNavArrows: function(){
@@ -1095,7 +1099,6 @@
 		},
 
 		click: function(e){
-			
 			e.preventDefault();
 			e.stopPropagation();
 			
@@ -1111,7 +1114,7 @@
 								break;
 							case 'prev':
 							case 'next':
-								var dir = DPGlobal.modes[this.viewMode].navStep * (target[0].className === 'prev' ? -1 : 1);
+								var dir = DPGlobal.modes[this.viewMode].navStep * (target[0].className === 'prev' ? -1 : 1);							
 								switch (this.viewMode){
 									case 0:
 										this.viewDate = this.moveMonth(this.viewDate, dir);
@@ -1124,7 +1127,12 @@
 											this._trigger('changeYear', this.viewDate);
 										break;
 								}
-								this.fill();
+								this.fill();												
+
+								var month = this.viewDate.getUTCMonth();
+
+								
+
 								break;
 							case 'today':
 								this.showMode(-2);
@@ -1189,34 +1197,7 @@
 									month += 1;
 								}
 							}
-							this._setDate(UTCDate(year, month, day));
-							console.log(eventos[month].list);
-
-							var templateDivEventos = 
-								'<div class="col-lg-4 col-md-4 col-sm-12">' + 
-									'<div class="event-names style-2">' +
-										'<ul>' +
-											'<li>' +
-												'<h5>Retorno das atividades</h5>' +
-												'<p>Atividades administrativas e pedagógicas</p>' +
-												'<strong class="dates position-center-x">' +
-													'<span>14</span>' +
-													'<span>/01</span>'
-												'</strong>' +
-											'</li>	' +
-											'<li>' +
-												'<h5>Volta às aulas</h5>' +
-												'<p>Início do Ano Letivo 2018</p>' +
-												'<strong class="dates position-center-x">' +
-													'<span>05</span>' +
-													'<span>/02</span>' +
-												'</strong>' +
-											'</li>	'	 +
-										'</ul>' +
-									'</div>' +
-								'</div>';
-
-							$('.events-left-side').html(templateDivEventos);
+							this._setDate(UTCDate(year, month, day));													
 						}
 						break;
 				}
@@ -1484,6 +1465,104 @@
 		}
 	};
 
+	function preencheEventos(month)
+	{
+		var eventos = [
+			{titulo: 'Semana Pedagógica', descricao: 'Semana pedagógica', dia: '01', mes: '02'},
+			{titulo: 'Semana Pedagógica', descricao: 'Semana pedagógica', dia: '02', mes: '02'},
+			{titulo: 'Ano letivo 2018', descricao: 'Início do ano letivo', dia: '05', mes: '02'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '12', mes: '02'},
+			{titulo: 'Feriado', descricao: 'Feriado de Carnaval', dia: '13', mes: '02'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '14', mes: '02'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '15', mes: '02'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '16', mes: '02'},
+			{titulo: 'Feriado', descricao: 'Sexta-feria Santa', dia: '30', mes: '03'},
+			{titulo: 'Feriado', descricao: 'Tiradentes', dia: '21', mes: '04'},
+			{titulo: 'Feriado', descricao: 'Feriado de São Jorge', dia: '23', mes: '04'},
+			{titulo: 'Feriado', descricao: 'Dia do Trabalhador', dia: '01', mes: '05'},
+			{titulo: 'Feriado', descricao: '200 Anos de Nova Friburgo', dia: '16', mes: '05'},
+			{titulo: 'Feriado', descricao: 'Corpus Christi', dia: '31', mes: '05'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '01', mes: '06'},
+			{titulo: 'Festa Junina', descricao: 'Arraiá Escola Fribourg 2018', dia: '09', mes: '06'},
+			{titulo: 'Evento do Dia C', descricao: 'Evento Dia C', dia: '07', mes: '07'},
+			{titulo: 'Término 1º Semestre', descricao: 'Término do 1º semestre letivo', dia: '16', mes: '07'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '17', mes: '07'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '18', mes: '07'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '19', mes: '07'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '20', mes: '07'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '23', mes: '07'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '24', mes: '07'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '25', mes: '07'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '26', mes: '07'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '27', mes: '07'},
+			{titulo: 'Imersão', descricao: 'Imersão', dia: '30', mes: '07'},
+			{titulo: 'Início do 2º Semestre', descricao: 'Início do 2º Sementre Letivo 2018', dia: '31', mes: '07'},
+			{titulo: 'Feriado', descricao: 'Dia da Independência do Brasil', dia: '07', mes: '09'},
+			{titulo: 'Olimpíadas 2018', descricao: 'Olimpíadas 2018', dia: '10', mes: '10'},
+			{titulo: 'Olimpíadas 2018', descricao: 'Olimpíadas 2018', dia: '11', mes: '10'},
+			{titulo: 'Feriado', descricao: 'Nossa Senhora Aparecida', dia: '12', mes: '10'},
+			{titulo: 'Feriado', descricao: 'Dia do Professor', dia: '15', mes: '10'},
+			{titulo: 'Feriado', descricao: 'Finados', dia: '02', mes: '11'},
+			{titulo: 'Feriado', descricao: 'Proclamação da República', dia: '15', mes: '11'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '16', mes: '11'},
+			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '19', mes: '11'},
+			{titulo: 'Feriado', descricao: 'Dia Nacional da Consciência Negra', dia: '20', mes: '11'},
+			{titulo: 'Término do 2º Semestre', descricao: 'Fim do Ano Letivo 2018', dia: '10', mes: '12'},
+			{titulo: 'Feriado', descricao: 'Natal', dia: '25', mes: '12'}
+		];
+
+		eventosMes = eventos.filter(function(value)
+		{
+			if (value.mes == month+1)
+			{
+				return true;
+			} 
+			return false;
+		});
+		
+		var tam = eventosMes.length;
+		var meio = tam/2;	
+		
+		var templateDivEventosLeft = 								
+			'<div class="col-lg-4 col-md-4 col-sm-12">' + 
+				'<div class="event-names style-1">' +
+					'<ul>' +
+						eventosMes.slice(0, meio).map(el => 
+						'<li>' +
+							'<h5>' + el.titulo + '</h5>' +
+							'<p>' + el.descricao + '</p>' +
+							'<strong class="dates position-center-x">' +
+								'<span>' + el.dia + '</span>' +
+								'<span>/' + el.mes + '</span>' +
+							'</strong>' +
+						'</li>	').join(' '); +
+					'</ul>' +
+				'</div>' +
+			'</div>';
+
+			console.log(templateDivEventosLeft);
+
+		var templateDivEventosRight = 								
+		'<div class="col-lg-4 col-md-4 col-sm-12">' + 
+			'<div class="event-names style-2">' +
+				'<ul>' +
+					eventosMes.slice(meio, tam).map(el => 
+					'<li>' +
+						'<h5>' + el.titulo + '</h5>' +
+						'<p>' + el.descricao + '</p>' +
+						'<strong class="dates position-center-x">' +
+							'<span>' + el.dia + '</span>' +
+							'<span>/' + el.mes + '</span>' +
+						'</strong>' +
+					'</li>	').join(' '); +
+				'</ul>' +
+			'</div>' +
+		'</div>';									
+		
+		$('.events-left-side').html(templateDivEventosLeft);
+		$('.events-right-side').html(templateDivEventosRight);	
+	}
+
 	var DateRangePicker = function(element, options){
 		$(element).data('datepicker', this);
 		this.element = $(element);
@@ -1698,16 +1777,6 @@
 			titleFormat: "MM yyyy"
 		}
 	};
-
-	var eventos = [
-		{ month: 1, 
-			list: [
-				{data: '01/01/2018', descricao: 'Teste'},
-				{data: '10/01/2018', descricao: 'Início'},
-				{data: '10/01/2018', descricao: 'Fim'},
-			]
-		}
-	];
 
 	var DPGlobal = {
 		modes: [
