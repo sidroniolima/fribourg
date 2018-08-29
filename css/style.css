@@ -37,6 +37,7 @@ p a:hover{ text-decoration:underline; outline: none;}
 p{ letter-spacing: normal; margin: 0 0 20px; line-height: 23px; font-size: 16px; color: #6b6b6b;}
 
 a{ color: #555; text-decoration: none; outline: none; display: block;}
+a.yellow{ color: #F8B138; text-decoration: none; outline: none; display: block;}
 a:hover, a:focus, a:active { outline: none; text-decoration: none; color: #F8B138;}
 
 .row.no-gutters{ margin-right: 0; margin-left: 0;}

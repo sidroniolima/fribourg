@@ -20,6 +20,8 @@
 .nav-holder.style-2 .nav-list li ul li a
 { color: #2d2b5e;}
 
+.tc-breadcrumb.yellow li a
+{ color: rgb(201, 145, 50);}
 
 /* Background Color */
 .top-bar,
