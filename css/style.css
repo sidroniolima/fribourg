@@ -930,6 +930,8 @@ padding: 0 20px; border-radius: 20px;}
 
 .curriculum-shedule{ margin: 0 0 30px;}
 .curriculum-shedule:last-child{ margin: 0;}
+.curriculum-shedule > ul > li:hover { background-color: #959595; cursor: pointer }
+.curriculum-shedule > ul > li:hover a { color: #f8b239;}
 .curriculum-shedule > ul{ border: 1px solid #000;}
 .curriculum-shedule > ul > li{ overflow: hidden; padding: 15px; border-bottom: 1px solid #000;}
 .curriculum-shedule > ul > li:last-child{ border: 0;}

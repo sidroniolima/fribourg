@@ -120,7 +120,13 @@
 							<a href="calendario.html">calendário</a>
 						</li>
 						<li>
-							<a href="#">comunicados</a>
+								<a href="comunicados.html">comunicados</a> 							
+								<ul> 								 								
+									<li><a href="comunicados.html?query=infantil">Educação Infantil</a></li> 								 								
+									<li><a href="comunicados.html?query=fundamental+1">Fundamental (1º ao 5º)</a></li> 							 								
+									<li><a href="comunicados.html?query=fundamental+2">Fundamental II ( 6º ao 9º)</a></li> 	 								
+									<li><a href="comunicados.html?query=medio">Ensino Médio</a></li> 	 							
+								</ul>	
 						</li>							
 						<li>
 							<a href="financeiro.html">financeiro</a>
@@ -179,25 +185,8 @@
 
 				<!-- Curriculum Shedule -->
 				<div class="curriculum-shedule">
-					<ul>
-						<li>
-							<ul>
-								<li><span class="sec-nu">1</span></li>
-								<li>Reunião de Pais (Teste)</li>
-								<li><i class="fa fa-check"></i></li>
-								<li><i class="fa fa-video-camera"></i></li>
-							</ul>
-							<span>Data: 03/08/2018</span>
-						</li>
-						<li>
-							<ul>
-								<li><span class="sec-nu">2</span></li>
-								<li>Provas mensais 9º ano (Teste)</li>
-								<li><i class="fa fa-check"></i></li>
-								<li><i class="fa fa-picture-o"></i></li>
-							</ul>
-							<span>Datas: 20/08 à 31/08/2018</span>
-						</li>
+					<ul id="ul-comunicados">
+
 					</ul>
 				</div>
 				<!-- Curriculum Shedule -->				
@@ -417,6 +406,31 @@
 <script src="js/isotope.pkgd.js"></script>					 
 <script src="js/wow-min.js"></script>			
 <script src="js/main.js"></script>	
-					
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+<script src="js/comunicados.json.js"></script>
+<script src="js/url_param.js"></script>
+<script>
+
+
+	const goToLink = (link) => { location.href = './breve.html'; };
+
+	$(function()
+	{
+		const cat = $.urlParam('query');
+		var lista = _.filter(comunicados, {'categoria': cat}).map( (item, index) => 
+			`<li onClick=goToLink('./comunicados/detalhes.html?cat=${item.categoria}&id=${item.id}')>`
+			+	'<ul>'
+			+		'<li><span class="sec-nu">' + index + 1 +'</span></li>'
+			+		`<li><a href=./comunicados/detalhes.html?cat=${item.categoria}&id=${item.id}>${item.titulo}</a></li>`
+			+	'</ul>'
+			+	'<span>' + item.data + '</span>'
+			+'</li>'
+		).join(' ');
+
+		$('#ul-comunicados').html(lista);
+	});
+
+</script>
+
 </body>
 </html>
