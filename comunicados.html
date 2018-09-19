@@ -423,7 +423,7 @@
 		var lista = _.filter(comunicados, {'categoria': cat}).map( (item, index) => 
 			`<li onClick=goToLink('./comunicados/${item.categoria}/${item.url}.html')>`
 			+	'<ul>'
-			+		'<li><span class="sec-nu">' + index + 1 +'</span></li>'
+			+		`<li><span class="sec-nu"> ${(index + 1)} </span></li>`
 			+		`<li><a href='./comunicados/${item.categoria}/${item.url}.html'>${item.titulo}</a></li>`
 			+	'</ul>'
 			+	'<span>' + item.data + '</span>'
