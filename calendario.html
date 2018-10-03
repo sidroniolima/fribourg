@@ -74,7 +74,7 @@
 				<!-- Topbar Left -->
 				<div class="topbar-left">
 					<ul>
-						<li><i class="fa fa-sign-in"></i>Login  /  Cadastre-se </li>
+						<li><a class="strong" target="_blank" href="http://portal.sponteeducacional.net.br/fribourg"><i class="fa fa-sign-in"></i>Portal do Aluno</li></a>
 						<li><i class="fa fa-phone"></i>(22) 2521 - 5411</li>
 						<li><i class="fa fa-envelope"></i>contato@escolafribourg.com.br</li>                
 					</ul>
@@ -411,53 +411,10 @@
 <script src="js/isotope.pkgd.js"></script>					 
 <script src="js/wow-min.js"></script>			
 <script src="js/main.js"></script>	
+<script src="js/eventos.json.js"></script>	
 <script>
 	function listaEventos()
 	{
-		var eventos = [
-			{titulo: 'Semana Pedagógica', descricao: 'Semana pedagógica', dia: '01', mes: '02'},
-			{titulo: 'Semana Pedagógica', descricao: 'Semana pedagógica', dia: '02', mes: '02'},
-			{titulo: 'Ano letivo 2018', descricao: 'Início do ano letivo', dia: '05', mes: '02'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '12', mes: '02'},
-			{titulo: 'Feriado', descricao: 'Feriado de Carnaval', dia: '13', mes: '02'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '14', mes: '02'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '15', mes: '02'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '16', mes: '02'},
-			{titulo: 'Feriado', descricao: 'Sexta-feria Santa', dia: '30', mes: '03'},
-			{titulo: 'Feriado', descricao: 'Tiradentes', dia: '21', mes: '04'},
-			{titulo: 'Feriado', descricao: 'Feriado de São Jorge', dia: '23', mes: '04'},
-			{titulo: 'Feriado', descricao: 'Dia do Trabalhador', dia: '01', mes: '05'},
-			{titulo: 'Feriado', descricao: '200 Anos de Nova Friburgo', dia: '16', mes: '05'},
-			{titulo: 'Feriado', descricao: 'Corpus Christi', dia: '31', mes: '05'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '01', mes: '06'},
-			{titulo: 'Festa Junina', descricao: 'Arraiá Escola Fribourg 2018', dia: '09', mes: '06'},
-			{titulo: 'Evento do Dia C', descricao: 'Evento Dia C', dia: '07', mes: '07'},
-			{titulo: 'Término 1º Semestre', descricao: 'Término do 1º semestre letivo', dia: '16', mes: '07'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '17', mes: '07'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '18', mes: '07'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '19', mes: '07'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '20', mes: '07'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '23', mes: '07'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '24', mes: '07'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '25', mes: '07'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '26', mes: '07'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '27', mes: '07'},
-			{titulo: 'Imersão', descricao: 'Imersão', dia: '30', mes: '07'},
-			{titulo: 'Início do 2º Semestre', descricao: 'Início do 2º Sementre Letivo 2018', dia: '31', mes: '07'},
-			{titulo: 'Feriado', descricao: 'Dia da Independência do Brasil', dia: '07', mes: '09'},
-			{titulo: 'Olimpíadas 2018', descricao: 'Olimpíadas 2018', dia: '10', mes: '10'},
-			{titulo: 'Olimpíadas 2018', descricao: 'Olimpíadas 2018', dia: '11', mes: '10'},
-			{titulo: 'Feriado', descricao: 'Nossa Senhora Aparecida', dia: '12', mes: '10'},
-			{titulo: 'Feriado', descricao: 'Dia do Professor', dia: '15', mes: '10'},
-			{titulo: 'Feriado', descricao: 'Finados', dia: '02', mes: '11'},
-			{titulo: 'Feriado', descricao: 'Proclamação da República', dia: '15', mes: '11'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '16', mes: '11'},
-			{titulo: 'Dia Livre', descricao: 'Dia livre do aluno', dia: '19', mes: '11'},
-			{titulo: 'Feriado', descricao: 'Dia Nacional da Consciência Negra', dia: '20', mes: '11'},
-			{titulo: 'Término do 2º Semestre', descricao: 'Fim do Ano Letivo 2018', dia: '10', mes: '12'},
-			{titulo: 'Feriado', descricao: 'Natal', dia: '25', mes: '12'}
-		];
-		
 		var templateDivEventos = 								
 			eventos.map(el => 
 			'<li class="col-md-4 col-lg-4 col-sm-4">' +
